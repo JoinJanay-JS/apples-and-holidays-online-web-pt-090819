@@ -22,15 +22,13 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-   holiday_hash.each do |season, holiday|
-    holiday.each do |holiday, supplies|
-      if holiday == :winter
-        supplies.push{Balloons}
-      end
-    end
+holiday_hash[:winter].each do |holiday, decorations|
+   decorations.push(item)
   end
 end
 
+
+add_supply_to_winter_holidays(holiday_supplies, "Baloons")
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
