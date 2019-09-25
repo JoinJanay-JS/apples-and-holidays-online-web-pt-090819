@@ -41,7 +41,7 @@ holiday_hash[:winter].each do |holiday, decorations|
    decorations.push("Ballons")
   end
 end
-
+end
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
