@@ -25,7 +25,7 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
    holiday_hash.each do |season, holiday|
     holiday.each do |holiday, supplies|
       if holiday == :winter
-        supplies.push{supply}
+        supplies.push{Balloons}
       end
     end
   end
