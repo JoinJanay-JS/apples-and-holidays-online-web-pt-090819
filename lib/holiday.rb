@@ -38,7 +38,9 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
        :memorial_day => ["BBQ"]
      }
    }
-
+holiday_hash[:winter].each do |holiday, decorations|
+   decorations << item
+  end
    
   end
 end
